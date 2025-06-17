@@ -9,7 +9,3 @@ workflows:
       - flutter build apk --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-    publishing:
-      email:
-        recipients:
-          - yohao_net@hotmail.com
