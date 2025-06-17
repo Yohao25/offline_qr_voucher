@@ -1,0 +1,16 @@
+name: offline_qr_voucher
+description: App Flutter con QR offline e impresión de voucher
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  qr_flutter: ^4.0.0
+  printing: ^5.12.0
+  pdf: ^3.10.4
+
+flutter:
+  uses-material-design: true
