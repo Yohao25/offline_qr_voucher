@@ -5,13 +5,11 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Get Flutter packages
-        script: |
-          cd .
-          flutter pub get
+      - name: Get dependencies
+        script: flutter pub get
+        working_directory: .
       - name: Build APK
-        script: |
-          cd .
-          flutter build apk --release
+        script: flutter build apk --release
+        working_directory: .
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
